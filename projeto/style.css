@@ -1,0 +1,93 @@
+/*estilização index mariana aula 2*/
+
+body{
+    font-family: "lucida Sans Unicode", Helvetica, sans-serif;
+    background-color: #333333;
+    background-image: url(/home/web8382/Desktop/aula1/mirror-fashion/img/body-background.png);
+    margin-left: auto;
+    margin-right: auto;
+    width: 940px;
+}
+header{
+    position: relative;
+}
+.sacola{
+   background-image: url(/home/web8382/Desktop/aula1/projeto/img/sacola.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    font-size: 14px;
+    text-align: right;
+    width: 140px;
+    padding-right: 35px;    
+    padding-top: 8px;
+    position: absolute;
+    top:0;
+    right:0;
+}
+.menu-opcoes{
+    position: absolute;
+    bottom:0;
+    right:0;
+}
+.menu-opcoes ul{
+    font-size: 15px;
+}
+.menu-opcoes a{
+    color: #333333;
+}
+.menu-opcoes ul li{
+    display: inline;
+    margin-left: 20px;
+}
+.container{
+    margin: 0 auto;
+    width: 940px;
+}
+
+
+h1{
+    background-image: url(/home/web8382/Desktop/aula1/mirror-fashion/img/sobre-background.jpg);
+    
+}
+h2{
+    border-bottom: 2px solid #333333;
+    margin-top: 10px;
+}
+#centro-distribuicao{
+    margin-left: auto;
+    margin-right: auto;
+    width: 550px;
+}
+figure{
+    text-align: center;
+    margin: 30px;
+    padding: 15px;
+    background-color: #f2eded;
+    
+}
+figcaption{
+    margin-top: 10px;
+    font-style: italic;
+    font-size: small;
+}
+p{
+    padding: 0 45px;
+    text-indent: 15px;
+    text-align: justify;
+
+
+}
+footer{
+    color: #777;
+    margin: 30px 0;
+    padding: 30px 0;
+}
+footer img{
+    margin-right: 30px;
+    vertical-align: middle;
+    width: 94px;
+}
+#familia{
+    float: right;
+    margin: 0 0 10px 10px;
+}

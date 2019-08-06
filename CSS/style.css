@@ -1,0 +1,279 @@
+/*estilização index mariana aula 2*/
+
+body {
+    font-family: "lucida Sans Unicode", Helvetica, sans-serif;
+    background-color: #333333;
+    background-image: url("/home/web8382/Desktop/aula1/mirror-fashion/img/body-background.png");
+
+    /* width: 940px;*/
+}
+header {
+    position: relative;
+}
+.sacola {
+    background-image: url("/home/web8382/Desktop/aula1/projeto/img/sacola.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    font-size: 14px;
+    text-align: right;
+    width: 140px;
+    padding-right: 35px;
+    padding-top: 8px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.menu-opcoes {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 5px; 
+}
+.menu-opcoes ul {
+    font-size: 15px;
+}
+.menu-opcoes a {
+    color: #333333;
+}
+.menu-opcoes ul li {
+    display: inline;
+    margin-left: 20px;
+}
+.menu-opcoes a:hover{
+    color: #007DC6;
+}
+.menu-opcoes a:active{
+    color: #867dc6;
+}
+.container {
+    margin: 0 auto;
+    width: 940px;
+}
+.container img{
+    margin-bottom: 5px;
+}
+/*menu departamentos*/
+.busca{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.busca,
+.menu-departamentos {
+    background-color: #dcdcdc;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 10px;
+    width: 230px;
+    float: left;
+}
+.busca form,
+.busca h2,
+.menu-departamentos h2 {
+    margin: 10px;
+}
+.menu-departamentos li {
+    background-color: white;
+    margin-bottom: 1px;
+    padding: 5px 10px;
+}
+.menu-departamentos a {
+    color: #333333;
+    text-decoration: none;
+}
+.busca input[type=search] {
+    width: 170px;
+}
+.menu-departamentos {
+    clear: both;
+}
+.menu-departamentos li ul{
+    display: none;
+}
+.menu-departamentos li:hover ul{
+    display: block;
+}
+.menu-departamentos  li ul li{
+    background-color: #dcdcdc;
+}
+.menu-departamentos li li a::before{
+    content: '- ';
+    content: '\272A ';
+    padding-right: 5px;
+}
+/*********Paineis ***********/
+
+.paineis {
+    margin: 10px 0;
+    padding: 10px;
+    width: 445px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 4px #999;
+    box-shadow: inset 1px 1px 4px #999;
+}
+.novidades {
+    float: left;
+    background-color: #f5dcdc;
+    background: linear-gradient(#f5dcdc, #bebef4);
+}
+.mais-vendidos {
+    float: right;
+    background-color: #dcdcf5;
+    background: linear-gradient(#dcdcf5, #f4bebe);
+
+}
+.paineis li {
+    display: inline-block;
+    vertical-align: top;
+    width: 140px;
+    margin: 2px;
+    padding-bottom: 10px;
+}
+.paineis h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-shadow: 3px 3px 2px #fff;
+    text-shadow:  3px 3px 2px rgba(255, 255, 255, 0.8);
+}
+.paineis a {
+    color: #333333;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+}
+.paineis h2::before{
+    content: '\2756';
+    padding-right: 5px;
+    opacity: 0.4;
+}
+.paineis li:hover{
+    box-shadow: 0 0 5px #333;
+    transition: box-shadow 0.7s;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 5px #333;
+    transition: 0.7s;
+    transform: scale(1.2) rotate(-5deg);
+}
+.paineis li{
+    transition: 0.7s; 
+}
+/*******Footer******/
+footer{
+    background-image: url(/home/web8382/Desktop/aula1/projeto/img/fundo-rodape.png);
+    clear: both;
+    padding: 20px 0;
+}
+footer .container{
+    position: relative;
+}
+.social a{
+    /*tamanho da imagem*/
+    height: 32px;
+    width: 32px;
+    /*image replacement*/
+    display: block;
+    text-indent: -9999px;
+}
+.social{
+    position: absolute;
+    top: 12px;
+    right: 0;
+}
+.social li{
+    float: left;
+    margin-left: 25px;
+}
+.social a[href*="facebook.com"]{
+    background-image: url(/home/web8382/Desktop/aula1/projeto/img/facebook.png);
+
+}
+.social a[href*="twitter.com"]{
+    background-image: url(/home/web8382/Desktop/aula1/projeto/img/twitter.png);
+    
+}
+.social a[href*="google.com"]{
+    background-image: url(/home/web8382/Desktop/aula1/projeto/img/googleplus.png);
+    
+}
+.busca button{
+    background-image: url(/home/web8382/Desktop/aula1/projeto/img/busca.png);
+    background-repeat: no-repeat;
+    border: none;
+    width: 20px;
+    height: 20px;
+    text-indent: -9999px;
+}
+/*Adaptação para mobile 320px */
+
+@media (max-width: 939px)
+     .container{
+        width: 96%;
+    }
+    header h1{
+        text-indent: center;        
+    }
+    header h1 img{
+        max-width: 50%;
+    }
+    .sacola{
+        display: none;
+    }
+    .menu-opcoes{
+        position: static;
+        text-align: center;
+    }
+    .menu-opcoes ul li{
+        display: inline-block;
+        margin: 5px;
+    }
+    .busca,
+    .menu-departamentos,
+    .banner-destaque img{
+        margin-right: 0;
+        width: 100%;
+    }
+    .paineis{
+        width: auto;
+    }
+    .paineis li{
+        width: 30%;
+    }
+    .paineis img{
+        width: 100%;
+    } 
+    @media (max-width:480px){
+        header h1{
+            margin: 5px 0;
+        }
+        .menu-departamentos{
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        .menu-departamentos nav > ul{
+            column-count: 2;
+        }
+    @media (max-width: 720px){
+        /*novos estilos para mobile*/
+        header h1{
+            text-align:left;
+        }
+        .menu-opcoes{
+            position: absolute;
+        }
+        .sacola{
+            width: 15%;
+        }
+        .busca,
+        .menu-departamentos{
+            margin-right: 1%;
+            width: 30%;
+    
+        }
+        .menu-departamentos nav > ul{
+            width: 69%;
+        }
+
+        }
+}
