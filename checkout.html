@@ -9,15 +9,12 @@
     <link rel="stylesheet" href="CSS/bootstrap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css">
     <title>Checkout Mirror Fashion</title>
+    
 </head>
 
 <body>
     <div class="jumbotrom jumbotrom-fuid">
         <div class="container">
-
-
-
-
             <h1>Otima escolha!</h1>
             <p>Obrigado por comprar na Mirror Fashion! Preencha seus dados para efetivar a
                 compra.
@@ -40,6 +37,16 @@
 
 
                 <div class="card-body">
+                    <div class="form-group"> 
+                        <label for="qtd">Quantidade: </label>
+                        <input type="number" id="qtd"   min="1" max="99" value="1"  class="form-control">
+                    </div>
+
+                    <div class="form-group"> 
+                        <label for="total">Total: </label>
+                        <output for="qtd preco" id="total"  class="form-control"> </output>
+                    </div>
+
                     <img src="/home/web8382/Desktop/aula1/projeto/img/produtos/foto2-verde.png" alt="camisa-verde">
                     <dl>
                         <dt>Produto</dt>
@@ -52,7 +59,7 @@
                         <dd>42</dd>
 
                         <dt>Preço</dt>
-                        <dd>R$ 48,95</dd>
+                        <dd id="preco">48,95</dd>
                     </dl>
                 </div>
                 <!--fim card body-->
@@ -121,7 +128,7 @@
     </div> <!-- fim do row -->
     </div> <!-- fim do segundo container -->
 
-
+    <script type="text/javascript" src="../mirror-fashion/js/total.js"></script>
 </body>
 
 </html>
